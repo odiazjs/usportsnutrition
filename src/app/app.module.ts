@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component'
+import { AppComponent } from './app.component'
+import { NavbarComponent } from './navbar/navbar.component'
 
 // store
 import { StoreModule } from '../store/module'
@@ -20,7 +22,11 @@ const APP_COMMON_MODULES = [
 ]
 
 @NgModule( {
-  declarations: [ProductsComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    ProductsComponent
+  ],
   imports: [...APP_COMMON_MODULES],
   providers: [
     LoginEpics,
@@ -32,6 +38,6 @@ const APP_COMMON_MODULES = [
       multi: true
     },
   ],
-  bootstrap: [ ProductsComponent ]
+  bootstrap: [ ProductsComponent, NavbarComponent ]
 } )
 export class AppModule { }
