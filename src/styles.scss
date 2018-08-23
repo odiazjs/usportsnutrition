@@ -8,5 +8,15 @@ body {
 
 .flex-container {
     display: flex;
-    /* or inline-flex */
+    &.row {
+        flex-direction: row;
+    }
+    &.col {
+        flex-direction: column;
+    }
+}
+
+.flex-container > div {
+    margin: 0px;
+    padding: 0px;
 }

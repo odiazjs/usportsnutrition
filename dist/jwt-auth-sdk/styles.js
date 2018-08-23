@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n"
+module.exports = "/* You can add global styles to this file, and also import other style files */\n\nbody {\n    margin: 0px !important;\n}\n\n/* Flexbox */\n\n.flex-container {\n    display: flex;\n    /* or inline-flex */\n}"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/oscardiaz/Documents/usportsnutrition-app/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /mnt/c/Users/odiaz/Documents/usportsnutrition-app/src/styles.css */"./src/styles.css");
 
 
 /***/ })
